@@ -1,0 +1,50 @@
+body
+{
+    background-image: url(assets/Background-small-book.png);
+    background-position: -70px -100px;
+    background-size: 110%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.link-container
+{
+    display: flex;
+    flex-direction:column;
+    row-gap: 20px;
+    align-items: center;
+    font-family: "Fredericka the Great", serif;
+    color:black;
+    font-size:20px;
+}
+
+.heading
+{
+    text-align: center;
+    font-size:45px;
+    color: rgb(50, 50, 50);
+    text-decoration: underline;
+    
+}
+
+.fredericka-the-great-regular {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.book-cover
+{
+    height: 550px;
+    width: 950px;
+    margin: 85px auto;
+    display: flex;
+}
+
+.left-page, .right-page
+{
+    width:50%;
+}
