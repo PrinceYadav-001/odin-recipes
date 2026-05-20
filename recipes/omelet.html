@@ -3,65 +3,145 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Omelet</title>
+        <title>Odin Recipes</title>
+        <link rel = "stylesheet" href = "style.css">
 
-        <style>
-            body
-            {
-                padding: 0px 0px 30px 0px;
-                
-            }
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
 
-            .master-div
-            {
-                margin:0px 25%;
-                padding:0px 10px;
-            }
-
-            .title, .recipe-image
-            {
-                display: flex;
-                justify-content: center;
-                border-bottom: 3px black solid;
-                margin: 0px 15%;
-            }
-
-        </style>
     </head>
-    <body>
-        <div class = "master-div">
-            <a href = "../index.html">Home</a>
 
-            <div class = "title">
-                <h1>Omelet</h1>
-            </div>
+    <style>
 
-            <div class = "recipe-image">
-                <img src = "images/omelet.webp" alt = "Omelet Rice served on a dish" height = "200px">
-            </div>
+        @font-face 
+        {
+            font-family: "Doodle";
+            src: url(assets/GourmetEatery-V4qdw.otf);
+        }
+
+        *
+        {
+            font-size:17px;
+            /* font-family: Doodle, sans-serif; */
+            line-height: 24px;
+        }
+
+        li
+        {
+            margin-bottom: 15px;
+        }
+        .image-container
+        {
+            display: flex;
+            justify-content: center;
+            float: left;
             
-            <h2>Description</h2>
-            <p>This veggie omelet is delicious served on top of toast. Use any cheese you like — Swiss and Gouda are both good choices. You can customize it with any veggie of your choice.</p>
+        }
 
-            <h2>Ingredients</h2>
-            <ul>
-                <li>2 tablespoons butter, divided</li>
-                <li>1 small onion, chopped</li>
-                <li>1 green bell pepper, chopped</li>
-                <li>¾ teaspoon salt, divided</li>
-                <li>4 large eggs</li>
-                <li>2 tablespoons milk</li>
-                <li>2 ounces shredded Swiss cheese</li>
-                <li>⅛ teaspoon freshly ground black pepper</li>
-            </ul>
+        .right-upper-section
+        {
+            display: flex;
+            column-gap: 10px;
+            margin: 0px 10px;
+        }
 
-            <h2>Steps</h2>
-            <ol>
-                <li>Melt 1 tablespoon butter in a medium skillet over medium heat. Cook and stir onion and bell pepper in butter until just tender, 4 to 5 minutes. Transfer vegetables to a bowl, season with 1/4 teaspoon salt, and set aside.</li>
-                <li>Beat together eggs, milk, remaining 1/2 teaspoon salt, and pepper in a separate bowl.</li>
-                <li>Melt remaining 1 tablespoon butter in the skillet over medium heat; swirl to coat the bottom of the skillet with butter. When butter is bubbly, pour in egg mixture and cook undisturbed until the bottom of eggs begin to set, about 1 minute. Gently lift the edges of omelet with a spatula to let any uncooked egg flow onto the skillet. Continue cooking until the center of omelet starts to look dry, 1 to 2 more minutes.</li>
-                <li>Sprinkle cheese over omelet, then spoon vegetable mixture over 1/2 of the omelet. Use a spatula to gently fold omelet over vegetables. Cook until cheese melts to desired consistency, about 1 minute. Slide omelet onto a plate. Cut in half and serve.</li>
-            </ul>
+        .recipe-image
+        {
+            width:300px;
+            height:auto;
+
+        }
+
+        .desc
+        {
+            display: inline;
+            margin: 10px 10px 0px 0px;
+            text-align: left;
+        }
+        .recipe-image
+        {
+            width:200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .heading
+        {text-decoration: none;}
+
+        .ingredients
+        {
+            column-count: 2;
+            column-gap: 25px;
+        }
+
+        .ing-heading
+        {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .bookmark-cover
+        {
+            position: fixed;
+            border: 1px lightblue solid;
+            bottom: 190px;
+            left:205px;
+        }
+
+        .bookmark-img
+        {
+            height: 50px;
+            width:100px;
+            position: absolute;
+        }
+
+        .menu-icon
+        {
+            width: 40px;
+            height: auto;
+            position: absolute;
+            top:5px;
+            left:40px;
+        }
+
+    </style>
+    <body>
+        <a class = "bookmark-cover" href="index.html">
+            <img class = "bookmark-img" src = "assets/bookmark.png">
+            <img class = "menu-icon" src = "assets/menu-icon.svg">
+        </a>
+        <div class = "book-cover">
+            <div class = "left-page">
+                <ul>
+                    <li>Melt one tablespoon butter in a medium skillet over medium heat. Cook and stir onion and bell pepper in butter until just tender, four to five minutes. Transfer vegetables to a bowl, season with one-fourth teaspoon salt, and set aside.</li>
+                    <li>Beat together eggs, milk, remaining half teaspoon salt, and pepper in a separate bowl.</li>
+                    <li>Melt remaining one tablespoon butter in the skillet over medium heat; swirl to coat the bottom of the skillet with butter. When butter is bubbly, pour in egg mixture and cook undisturbed until the bottom of eggs begin to set, about one minute. Gently lift the edges of omelet with a spatula to let any uncooked egg flow onto the skillet. Continue cooking until the center of omelet starts to look dry</li>
+                    <li>Sprinkle cheese over omelet, then spoon vegetable mixture over half of the omelet. Use a spatula to gently fold omelet over vegetables. Cook until cheese melts to desired consistency, about one minute. Slide omelet onto a plate. Cut in half and serve.</li>
+                </ul>
+
+            </div>
+            <div class = "right-page">
+                <h1 class = "heading">Omelet</h1>
+                <div class = "right-upper-section">
+                    <div class = "image-container">
+                        <img class = "recipe-image" src = "assets/omelet.png" alt="omelet on a plate">
+                    </div>
+                    <div class = "desc"> This veggie omelet is delicious served on top of toast. Use any cheese you like — Swiss and Gouda are both good choices. You can customize it with any veggie of your choice.</div>
+                </div>
+                <h2 class = "ing-heading">Ingredients</h2>
+                <ul class = "ingredients">
+                    <li>2 tablespoons butter, divided</li>
+                    <li>1 small onion, chopped</li>
+                    <li>1 green bell pepper, chopped</li>
+                    <li>¾ teaspoon salt, divided</li>
+                    <li>4 large eggs</li>
+                    <li>2 tablespoons milk</li>
+                    <li>2 ounces shredded Swiss cheese</li>
+                    <li>⅛ teaspoon freshly ground black pepper</li>
+                </ul>
+            </div>
+
         </div>
     </body>
 </html>
