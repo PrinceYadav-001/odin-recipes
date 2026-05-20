@@ -3,6 +3,7 @@ body
     background-image: url(assets/Background-small-book.png);
     background-position: -70px -100px;
     background-size: 110%;
+    overflow-y: hidden;
 }
 
 a

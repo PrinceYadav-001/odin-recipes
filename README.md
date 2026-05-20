@@ -1,6 +1,6 @@
 ## About
 
-In this Project, i will be creating a simple HTML based website which provides data about different recipes.
+In this Project, i will be creating a simple HTML based cookbook website which provides data about different recipes.
 
 ## Skills Demonstrated
 <ul>
